@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin: 3em 2em;
+    padding: 3em;
+    align-items: center;
+    background-color: rgb(223, 217, 131);
+    border: 3px, black, dashed;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 500px;
+    transition: width 2s;
+}
+
+.card:hover{
+    width: 650px;
+    background-color: rgb(238, 232, 149);
+    box-shadow: 10px 10px 10px rgb(175, 170, 99);
+
+}
+
+.card h2{
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+.card p{
+    font-family: "Inria Sans", sans-serif;
+}
+
+img{
+    margin: 1em 2em;
+    width: 10em;
+    height: 10em;
+}
+
+.buy-btn{
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #00FA9A;
+    color: white;
+    padding: 0.5em 3em;
+    margin-top: 2em;
+}
+
+.buy-btn:hover{
+    background-color: #25ad79;
+    cursor:pointer
+}
