@@ -1,156 +1,130 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* Cards section */
 
-body{
-    background-color: antiquewhite;
-}
-
-main{
+.cards{
+    margin-top: 1em;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .card{
-    margin: 3em 2em;
-    padding: 3em;
-    align-items: center;
-    background-image: radial-gradient( rgb(241, 241, 126), rgb(186, 187, 115));
+    margin: 2em 2em;
+    padding: 0 1em 0 3em;
     border: 3px, black, dashed;
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     flex-direction: row;
-    justify-content: center;
-    width: 30vw;
-    transition: width 2s;
+    transition: transform 0.3s;
+    animation: card-gradient 2s infinite;
 }
 
-@media only screen and (max-width: 1200px){
+@media screen and (max-width: 550px) {
     .card{
         flex-direction: column;
-        width: 50vw;
-    }
-    
-    .card:hover{
-        width: 55vw;
+        padding: 0;
     }
 
-    main{
+    .card-info{
+        margin-top: 1.2em;
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
+    .card-info button{
+        margin-top: 1em;
+    }
+
+    .card .card-img{
+        margin: 0.5em 1em;
+    }
+}
+
+
+@keyframes card-gradient{
+    0% {background-image: radial-gradient( #fff75c, #feca8a);}
+    25% {background-image: radial-gradient( #fbf360, #feca8a);}
+    50% {background-image: radial-gradient( #fbf46d, #feca8a);}
+    75% {background-image: radial-gradient( #fbf360, #feca8a);}
+    100% {background-image: radial-gradient( #fff75c, #feca8a);}
 }
 
 .card:hover{
-    width: 35vw;
     background-color: rgb(238, 232, 149);
     box-shadow: 10px 10px 10px rgb(175, 170, 99);
-
+    transform: scale(1.05, 1.05);
 }
 
-.card h2{
+.card-title{
     font-family: "Protest Guerrilla", sans-serif;
 }
 
-.card p{
+.card-description{
     font-family: "Inria Sans", sans-serif;
 }
 
-img{
+.card-img{
     margin: 1em 2em;
-    width: 10em;
-    height: 10em;
+    max-width: 200px;
+    height: auto;
 }
 
-.buy-btn{
+.card-btn{
     font-size: 1em;
     font-weight: bold;
-    background-color: #00FA9A;
+    background-color: #4ed6a2;
+    border: 1px #2d5a49 solid;
+    border-radius: 0.5em;
     color: white;
-    padding: 0.5em 3em;
+    padding: 0.5em 1em;
     margin-top: 2em;
 }
 
-.buy-btn:hover{
-    background-color: #25ad79;
+.card-btn:hover{
+    background-color: #1fd690;
     cursor:pointer
 }
 
-#page-title{
-    font-size: 20px;
-    padding: 14px 16px;
-    margin-right: auto;
-    float: left;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-}
-nav{
-    top: 0px;
-    position: sticky;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #333;
-}
-
-li {
-    list-style-type: none;
-    float: right;
-}
-
-.nav-element {
-    background-color: #333;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.nav-element:hover{
-    background-color: #3f3e3e;
-}
-
-.dropdown{
-    display: inline-block;
-    position: relative;
-}
-
-.dropdown-content{
+/* The Modal (background) */
+.modal {
     display: none;
-    position: absolute;
-    background-color: #504d4d;
-    min-width: 160px;
-    box-shadow: none;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
     z-index: 1;
-    transition: display 4s;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+/* Modal Content */
+.modal-content {
+    flex-direction: column;
+    display: flex;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 2px solid #000000;
+    width: 80%;
 }
 
-.dropdown-content a {
-    transition: background-color 0.3s;
-    border-bottom: 2px rgb(36, 36, 36) solid;
-    color: white;
-    padding: 12px 16px;
+#modal-description{
+    margin-top: 10px;
+}
+
+/* The Close Button */
+#close {
+    display: inline;
+    color: #787878;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover, #close:focus {
+    color: #ff0000;
     text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #646464;
-}
-
-.dropdown:hover .dropdown-content{
-    display: block;
+    cursor: pointer;
 }

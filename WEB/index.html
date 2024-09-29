@@ -4,31 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/WEB/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5a4865fbe1.js" crossorigin="anonymous"></script>
         <title>LearnToCode</title>
     </head>
     <body>
         <header>
-            <a href="/WEB/index.html" id="page-title">LearnToCode</a>
-            <ul class="navbar">
-                <li><a href="">Services</a></li>
-                <li><a href="/WEB/about_us.html">About Us</a></li>
-                <li><a href="/WEB/index.html">Home</a></li>
-                <li><a href="/WEB/cards.html">Cards</a></li>
-            </ul>
+            <h1 href="/WEB/index.html" class="page-title">LearnToCode <i class="fa-solid fa-keyboard page-icon"></i></h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="nav-element" href="/WEB/index.html">Home</a></li>
+                    <li><a class="nav-element" href="/WEB/cards.html">Cards</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn nav-element">Services</a>
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-element">Link 1</a>
+                            <a href="#" class="dropdown-element">Link 2</a>
+                            <a href="#" class="dropdown-element">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="dropdown">
+                    <a href="javascript:void(0);" id="hamburger"><i class="fa-solid fa-bars"></i></a>
+                    <div class="dropdown-content">
+                        <a href="/WEB/index.html" class="dropdown-element">Home</a>
+                        <a href="/WEB/cards.html" class="dropdown-element">Cards</a>
+                    </div>
+                </div>
+            </div>
         </header>
-        <div id="page-content">
-            <aside>
-                <h2 class="side-content">Side Bar</h2>
-                <a href="https://www.w3schools.com/python/" class="side-content">Click there for more info!</a>
-            </aside>
-            <main>
-                <h1 class="title">Welcome to my LearnToCode!</h1>
-                <h2 class="title">This website is about my Web-Application</h2>
-                <p class="content">Aplikācija dod iespēju "skolotājam" veidot savus programmēšanas uzdevumus ērtajā vidē un uzdot tos savējiem "audzēkņiem" un palielināt esošo programmēšanas apmācības materiāla daudzumu un kvalitāti. Visticamāk pirmā uzdevumu valoda būs Python, bet pēc iespējamības varēs veidot un risināt uzdevumus arī citās valodās.</p>
-                <p class="content">Mājaslapa glabās datus par izpildītajiem darbiem un krās statistiku par skolēniem, kuru attēlos skolotājam ērtajā veidā. Skolēniem būs iespēja pilnveidot programmēšanas prasmes, pildot uzdevumus un tiem būs iespēja uzlabot rezultātu, pēc sākotnēji neizietajeim uzdevuma testiem. Skolotājiem būs iespēja veidot programmēšanas uzdevumu bez liekām pūlem, viņam būs nepieciešams uzrakstīt uzdevuma aprakstījumu, gaidāmo rezultātu un pēc vēlmes vairākus rezultātus atkarībā no ievaddatiem. Skolotāji veidojot darbus drīkstēs tos, gan izmantot privāti, gan izvietot publiski, kur publiskos darbus skolēni drīkstēs novērtēt un tie labāk rekomendēsies pārējiem skolēniem. Par publisko uzdevumu izpildi skolēniem tiks piešķirts globālais reitings, kas atspoguļos audzēkņa zināšanas un būs motivācija pildīt uzdevumus. (Pēc ispējamības var realizēt ziņapmaiņu starp skolēnu un skolotāju mājaslapas ietvaros, bet šitā varētu būt drīzāk, kā papildus funkcija)</p>
-                <img src="/WEB/images/game_controller.png" alt="game_controller" width="300" height="300">
-            </main>
-        </div>
+        <main>
+            <h2 class="title-1">Welcome to my LearnToCode!</h2>
+            <h3 class="title-2">This website is about my Web-Application</h3>
+            <p class="text-box-1">Aplikācija dod iespēju "skolotājam" veidot savus programmēšanas uzdevumus ērtajā vidē un uzdot tos savējiem "audzēkņiem" un palielināt esošo programmēšanas apmācības materiāla daudzumu un kvalitāti. Visticamāk pirmā uzdevumu valoda būs Python, bet pēc iespējamības varēs veidot un risināt uzdevumus arī citās valodās.</p>
+            <p class="text-box-1">Mājaslapa glabās datus par izpildītajiem darbiem un krās statistiku par skolēniem, kuru attēlos skolotājam ērtajā veidā. Skolēniem būs iespēja pilnveidot programmēšanas prasmes, pildot uzdevumus un tiem būs iespēja uzlabot rezultātu, pēc sākotnēji neizietajeim uzdevuma testiem. Skolotājiem būs iespēja veidot programmēšanas uzdevumu bez liekām pūlem, viņam būs nepieciešams uzrakstīt uzdevuma aprakstījumu, gaidāmo rezultātu un pēc vēlmes vairākus rezultātus atkarībā no ievaddatiem. Skolotāji veidojot darbus drīkstēs tos, gan izmantot privāti, gan izvietot publiski, kur publiskos darbus skolēni drīkstēs novērtēt un tie labāk rekomendēsies pārējiem skolēniem. Par publisko uzdevumu izpildi skolēniem tiks piešķirts globālais reitings, kas atspoguļos audzēkņa zināšanas un būs motivācija pildīt uzdevumus. (Pēc ispējamības var realizēt ziņapmaiņu starp skolēnu un skolotāju mājaslapas ietvaros, bet šitā varētu būt drīzāk, kā papildus funkcija)</p>
+            <img class="image-box" src="/WEB/images/game_controller.png" alt="game_controller" width="300" height="300">
+        </main>
         <footer> &copy; Copyright 2024 LearnToCode </footer>
     </body>
 </html>

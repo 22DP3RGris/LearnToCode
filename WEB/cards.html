@@ -3,58 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/WEB/css/style.css">
     <link rel="stylesheet" href="/WEB/css/cards.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/5a4865fbe1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5a4865fbe1.js" crossorigin="anonymous"></script>
     <title>Cards</title>
 </head>
 <body>
-    <nav>
-        <h1 id="page-title">Cards <i class="fa-solid fa-id-card"></i></h1>
-        <ul>
-            <li><a href="/WEB/about_us.html" class="nav-element">About Us</a></li>
-            <li><a href="/WEB/index.html" class="nav-element">Home</a></li>
-            <li><a href="/WEB/cards.html" class="nav-element">Cards</a></li>
-            <li class="dropdown">
-                <a href="" class="dropbtn nav-element">Services</a>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <h1 class="page-title">Cards <i class="fa-solid fa-id-card page-icon"></i></h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/WEB/index.html" class="nav-element">Home</a></li>
+                <li><a href="/WEB/cards.html" class="nav-element">Cards</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn nav-element">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-element">Link 1</a>
+                        <a href="#" class="dropdown-element">Link 2</a>
+                        <a href="#" class="dropdown-element">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <button href="javascript:void(0);" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+            <div class="dropdown-content">
+                <a href="/WEB/index.html" class="dropdown-element">Home</a>
+                <a href="/WEB/cards.html" class="dropdown-element">Cards</a>
+            </div>
+        </div>
+        <script src="/WEB/js/hamburger.js"></script>
+    </header>
     <main>
-        <div class="card">
-            <article>
-                <h2>Potato</h2>
-                <p>Very tasty!</p>
-                <button class="buy-btn">Buy</button>
-            </article>
-            <img src="/WEB/images/potato.png" alt="potato">
-        </div>
-        <div class="card">
-            <article>
-                <h2>Tomato</h2>
-                <p>Maybe tasty!?</p>
-                <button class="buy-btn">Buy</button>
-            </article>
-            <img src="/WEB/images/tomato.png" alt="tomato">
-        </div>
-        <div class="card">
-            <article>
-                <h2>Carrot</h2>
-                <p>Idk how it tastes.</p> 
-                <button class="buy-btn">Buy</button>
-            </article>
-            <img src="/WEB/images/carrot.png" alt="carrot">
+        <div class="cards">
+            <div class="card">
+                <div class="card-info">
+                    <h2 class="card-title">Potato</h2>
+                    <p class="card-description">Very tasty!</p>
+                    <button class="card-btn">Learn More</button>
+                </div>
+                <img class="card-img" src="/WEB/images/potato.png" alt="potato">
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <h2 class="card-title">Tomato</h2>
+                    <p class="card-description">Maybe tasty!?</p>
+                    <button class="card-btn">Learn More</button>
+                </div>
+                <img class="card-img" src="/WEB/images/tomato.png" alt="tomato">
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <h2 class="card-title">Carrot</h2>
+                    <p class="card-description">Idk how it tastes.</p> 
+                    <button class="card-btn">Learn More</button>
+                </div>
+                <img class="card-img" src="/WEB/images/carrot.png" alt="carrot">
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <h2 class="card-title">Coconut</h2>
+                    <p class="card-description">Very interesting.</p> 
+                    <button class="card-btn">Learn More</button>
+                </div>
+                <img class="card-img" src="/WEB/images/coconut.png" alt="coconut">
+            </div>
+            <div id="Modal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <i class="fa-regular fa-circle-xmark" id="close"></i>
+                        <h3 id="modal-title">Title</h3>
+                    </div>
+                    <p id="modal-description">Some text in the Modal..</p>
+                </div>
+            </div>
+            <script src="/WEB/js/modal.js"></script>
         </div>
     </main>
+    <footer> &copy; Copyright 2024 LearnToCode </footer>
 </body>
 </html>
