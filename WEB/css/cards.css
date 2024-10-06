@@ -16,27 +16,31 @@
     align-items: center;
     flex-direction: row;
     transition: transform 0.3s;
-    animation: card-gradient 2s infinite;
+    animation: card-gradient 2s infinite alternate, card-glow 1s infinite alternate;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
     .card{
         flex-direction: column;
         padding: 0;
     }
 
     .card-info{
-        margin-top: 1.2em;
+        text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .card-title{
+        margin: 1.2em 0 0.7em 0;
+    }
+
     .card-info button{
-        margin-top: 1em;
+        margin: 1.5em 0;
     }
 
     .card .card-img{
-        margin: 0.5em 1em;
+        margin: 1em 2em;
     }
 }
 
@@ -49,10 +53,19 @@
     100% {background-image: radial-gradient( #fff75c, #feca8a);}
 }
 
+@keyframes card-glow{
+    from {
+        box-shadow: 0 0 -10px 10px #fcf68a
+    } to{
+        box-shadow: 0 0 10px 10px #fcf68a;
+    }
+}
+
 .card:hover{
     background-color: rgb(238, 232, 149);
     box-shadow: 10px 10px 10px rgb(175, 170, 99);
-    transform: scale(1.05, 1.05);
+    transform: scale(1.05);
+    animation: card-gradient 2s infinite alternate;
 }
 
 .card-title{
@@ -60,6 +73,7 @@
 }
 
 .card-description{
+    width: 150px;
     font-family: "Inria Sans", sans-serif;
 }
 
@@ -112,6 +126,7 @@
 
 #modal-description{
     margin-top: 10px;
+    max-width: 95%;
 }
 
 /* The Close Button */

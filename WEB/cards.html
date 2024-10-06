@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5a4865fbe1.js" crossorigin="anonymous"></script>
     <title>Cards</title>
+    <link rel="icon" type="image/x-icon" href="./images/game_controller.png">
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
         <nav class="navbar">
             <ul>
                 <li><a href="/WEB/index.html" class="nav-element">Home</a></li>
-                <li><a href="/WEB/cards.html" class="nav-element">Cards</a></li>
+                <li><a href="/WEB/contact.html" class="nav-element">Contact</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn nav-element">Services</a>
                     <div class="dropdown-content">
@@ -33,8 +34,16 @@
         <div class="hamburger">
             <button href="javascript:void(0);" id="hamburger"><i class="fa-solid fa-bars"></i></button>
             <div class="dropdown-content">
-                <a href="/WEB/index.html" class="dropdown-element">Home</a>
-                <a href="/WEB/cards.html" class="dropdown-element">Cards</a>
+                <a href="/WEB/index.html" class="hamburger-element">Home</a>
+                <a href="/WEB/contact.html" class="hamburger-element">Contact</a>
+                <div class="hamburger-dropdown">
+                    <a href="javascript:void(0);" class="hamburger-element">Services</a>
+                    <div class="hamburger-dropdown-content">
+                        <a href="#" class="hamburger-element">Link 1</a>
+                        <a href="#" class="hamburger-element">Link 2</a>
+                        <a href="#" class="hamburger-element">Link 3</a>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="/WEB/js/hamburger.js"></script>
@@ -43,35 +52,35 @@
         <div class="cards">
             <div class="card">
                 <div class="card-info">
-                    <h2 class="card-title">Potato</h2>
-                    <p class="card-description">Very tasty!</p>
+                    <h2 class="card-title">Python</h2>
+                    <p class="card-description">Very simple but efficient!</p>
                     <button class="card-btn">Learn More</button>
                 </div>
-                <img class="card-img" src="/WEB/images/potato.png" alt="potato">
+                <img class="card-img" src="/WEB/images/Python.png" alt="Python">
             </div>
             <div class="card">
                 <div class="card-info">
-                    <h2 class="card-title">Tomato</h2>
-                    <p class="card-description">Maybe tasty!?</p>
+                    <h2 class="card-title">Java</h2>
+                    <p class="card-description">Sometimes hard but very efficient!</p>
                     <button class="card-btn">Learn More</button>
                 </div>
-                <img class="card-img" src="/WEB/images/tomato.png" alt="tomato">
+                <img class="card-img" src="/WEB/images/Java.png" alt="Java">
             </div>
             <div class="card">
                 <div class="card-info">
-                    <h2 class="card-title">Carrot</h2>
-                    <p class="card-description">Idk how it tastes.</p> 
+                    <h2 class="card-title">C#</h2>
+                    <p class="card-description">Is a clone of Java.</p> 
                     <button class="card-btn">Learn More</button>
                 </div>
-                <img class="card-img" src="/WEB/images/carrot.png" alt="carrot">
+                <img class="card-img" src="/WEB/images/CSharp.png" alt="C#">
             </div>
             <div class="card">
                 <div class="card-info">
-                    <h2 class="card-title">Coconut</h2>
-                    <p class="card-description">Very interesting.</p> 
+                    <h2 class="card-title">PHP</h2>
+                    <p class="card-description">Old but still going strong.</p> 
                     <button class="card-btn">Learn More</button>
                 </div>
-                <img class="card-img" src="/WEB/images/coconut.png" alt="coconut">
+                <img class="card-img" src="/WEB/images/PHP.png" alt="PHP">
             </div>
             <div id="Modal" class="modal">
                 <!-- Modal content -->

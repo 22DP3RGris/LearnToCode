@@ -9,14 +9,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/5a4865fbe1.js" crossorigin="anonymous"></script>
         <title>LearnToCode</title>
+        <link rel="icon" type="image/x-icon" href="./images/game_controller.png">
     </head>
     <body>
         <header>
             <h1 href="/WEB/index.html" class="page-title">LearnToCode <i class="fa-solid fa-keyboard page-icon"></i></h1>
             <nav class="navbar">
                 <ul>
-                    <li><a class="nav-element" href="/WEB/index.html">Home</a></li>
-                    <li><a class="nav-element" href="/WEB/cards.html">Cards</a></li>
+                    <li><a href="/WEB/cards.html" class="nav-element">Cards</a></li>
+                    <li><a href="/WEB/contact.html" class="nav-element">Contact</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropbtn nav-element">Services</a>
                         <div class="dropdown-content">
@@ -28,22 +29,35 @@
                 </ul>
             </nav>
             <div class="hamburger">
-                <div class="dropdown">
-                    <a href="javascript:void(0);" id="hamburger"><i class="fa-solid fa-bars"></i></a>
-                    <div class="dropdown-content">
-                        <a href="/WEB/index.html" class="dropdown-element">Home</a>
-                        <a href="/WEB/cards.html" class="dropdown-element">Cards</a>
+                <button href="javascript:void(0);" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+                <div class="dropdown-content">
+                    <a href="/WEB/cards.html" class="hamburger-element">Cards</a>
+                    <a href="/WEB/contact.html" class="hamburger-element">Contact</a>
+                    <div class="hamburger-dropdown">
+                        <a href="javascript:void(0);" class="hamburger-element">Services</a>
+                        <div class="hamburger-dropdown-content">
+                            <a href="#" class="hamburger-element">Link 1</a>
+                            <a href="#" class="hamburger-element">Link 2</a>
+                            <a href="#" class="hamburger-element">Link 3</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <script src="/WEB/js/hamburger.js"></script>
         </header>
-        <main>
-            <h2 class="title-1">Welcome to my LearnToCode!</h2>
-            <h3 class="title-2">This website is about my Web-Application</h3>
-            <p class="text-box-1">Aplikācija dod iespēju "skolotājam" veidot savus programmēšanas uzdevumus ērtajā vidē un uzdot tos savējiem "audzēkņiem" un palielināt esošo programmēšanas apmācības materiāla daudzumu un kvalitāti. Visticamāk pirmā uzdevumu valoda būs Python, bet pēc iespējamības varēs veidot un risināt uzdevumus arī citās valodās.</p>
-            <p class="text-box-1">Mājaslapa glabās datus par izpildītajiem darbiem un krās statistiku par skolēniem, kuru attēlos skolotājam ērtajā veidā. Skolēniem būs iespēja pilnveidot programmēšanas prasmes, pildot uzdevumus un tiem būs iespēja uzlabot rezultātu, pēc sākotnēji neizietajeim uzdevuma testiem. Skolotājiem būs iespēja veidot programmēšanas uzdevumu bez liekām pūlem, viņam būs nepieciešams uzrakstīt uzdevuma aprakstījumu, gaidāmo rezultātu un pēc vēlmes vairākus rezultātus atkarībā no ievaddatiem. Skolotāji veidojot darbus drīkstēs tos, gan izmantot privāti, gan izvietot publiski, kur publiskos darbus skolēni drīkstēs novērtēt un tie labāk rekomendēsies pārējiem skolēniem. Par publisko uzdevumu izpildi skolēniem tiks piešķirts globālais reitings, kas atspoguļos audzēkņa zināšanas un būs motivācija pildīt uzdevumus. (Pēc ispējamības var realizēt ziņapmaiņu starp skolēnu un skolotāju mājaslapas ietvaros, bet šitā varētu būt drīzāk, kā papildus funkcija)</p>
-            <img class="image-box" src="/WEB/images/game_controller.png" alt="game_controller" width="300" height="300">
-        </main>
+        <div class="content-with-side">
+            <main>
+                <h2 class="title-1">Welcome to my LearnToCode!</h2>
+                <h3 class="title-2">This website is about my Web-Application</h3>
+                <p class="text-box-1">Aplikācija dod iespēju "skolotājam" veidot savus programmēšanas uzdevumus ērtajā vidē un uzdot tos savējiem "audzēkņiem" un palielināt esošo programmēšanas apmācības materiāla daudzumu un kvalitāti. Visticamāk pirmā uzdevumu valoda būs Python, bet pēc iespējamības varēs veidot un risināt uzdevumus arī citās valodās.</p>
+                <p class="text-box-1">Mājaslapa glabās datus par izpildītajiem darbiem un krās statistiku par skolēniem, kuru attēlos skolotājam ērtajā veidā. Skolēniem būs iespēja pilnveidot programmēšanas prasmes, pildot uzdevumus un tiem būs iespēja uzlabot rezultātu, pēc sākotnēji neizietajeim uzdevuma testiem. Skolotājiem būs iespēja veidot programmēšanas uzdevumu bez liekām pūlem, viņam būs nepieciešams uzrakstīt uzdevuma aprakstījumu, gaidāmo rezultātu un pēc vēlmes vairākus rezultātus atkarībā no ievaddatiem. Skolotāji veidojot darbus drīkstēs tos, gan izmantot privāti, gan izvietot publiski, kur publiskos darbus skolēni drīkstēs novērtēt un tie labāk rekomendēsies pārējiem skolēniem. Par publisko uzdevumu izpildi skolēniem tiks piešķirts globālais reitings, kas atspoguļos audzēkņa zināšanas un būs motivācija pildīt uzdevumus. (Pēc ispējamības var realizēt ziņapmaiņu starp skolēnu un skolotāju mājaslapas ietvaros, bet šitā varētu būt drīzāk, kā papildus funkcija)</p>
+                <img class="image-box" src="/WEB/images/game_controller.png" alt="game_controller" width="300" height="300">
+            </main>
+            <aside class="side-bar">
+                <h2 class="side-title">Side Bar</h2>
+                <a href="https://www.w3schools.com/python/" class="side-element">Click there for more info!</a>
+            </aside>
+        </div>
         <footer> &copy; Copyright 2024 LearnToCode </footer>
     </body>
 </html>

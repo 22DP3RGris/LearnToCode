@@ -7,7 +7,8 @@
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: #feffcf;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%2359b1bb' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Header */
@@ -20,6 +21,7 @@ header{
 
 .page-title{
     align-items: center;
+
     display: flex;
     font-size: 2em;
     padding: 14px 16px;
@@ -67,6 +69,7 @@ header{
     background-color: #3f3e3e;
 }
 
+/* Dropdown */
 .dropdown{
     display: inline-block;
     position: relative;
@@ -81,15 +84,15 @@ header{
     min-width: 160px;
 }
 
-.dropdown-content a {
+.dropdown-element {
     transition: background-color 0.3s;
-    border-bottom: 2px rgb(36, 36, 36) solid;
+    border-bottom: 0.5px rgb(36, 36, 36) solid;
     color: white;
     padding: 1em 1.4em;
     display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-element:hover {
     background-color: #646464;
 }
 
@@ -103,6 +106,8 @@ header{
     100% {transform: translateY(0);}
 }
 
+/* Hamburger */
+
 #hamburger{
     height: 100%;
     background-color: #333;
@@ -112,7 +117,6 @@ header{
     padding: 15px 25px;
     font-family: "Open Sans", sans-serif;
     font-size: 2em;
-    transition: background-color 0.3s;
     border: none;
 }
 
@@ -129,8 +133,25 @@ header{
     padding: 0.4em 1em;
 }
 
+.hamburger-element{
+    text-align: center;
+    transition: background-color 0.3s;
+    border-top: 0.5px #333 solid;
+    color: white;
+    padding: 1em 1.4em;
+    display: block;
+}
 
-@media screen and (max-width: 550px) {
+.hamburger-element:hover{
+    background-color: #646464;
+}
+
+.hamburger-dropdown-content{
+    background-color: #55545a;
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
     #hamburger {
       display: block;
     }
@@ -141,6 +162,11 @@ header{
 
 /* Page content */
 
+.content-with-side{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 main{
     min-height: 100vh;
     width: 100%;
@@ -150,11 +176,13 @@ main{
 }
 
 .title-1{
+    text-align: center;
     font-size: 3em;
     margin: 0.5em 0 0 0;
 }
 
 .title-2{
+    text-align: center;
     font-size: 2em;
     margin: 0.5em 0 0 0;
 }
@@ -162,7 +190,6 @@ main{
 .text-box-1{
     width: 70vw;
     margin-top: 2em;
-    text-align: center;
     padding: 20px 20px;
     background-color: #2c2b2b;
     color: white;
@@ -171,29 +198,40 @@ main{
 .image-box{
     margin-top: 5em;
 }
+@media screen and (max-width: 1000px) {
+    .title-1{
+        font-size: 2em;
+    }
+    .title-2{
+        font-size: 1.5em;
+    }
+}
+
 /* Side-bar content */
 
 .side-bar{
+    align-items: center;
     border-width: 5px;
-    background-color: #524e4e;
+    background-color: #524e4ea3;
     flex-direction: column;
-    width: 11vw;
     display: flex;
 }
 
 .side-title{
+    width: 100%;
     padding: 1em;
+    text-align: center;
     color: white;
-    background-color: #524e4e
 }
 
 .side-element{
+    text-align: center;
     padding: 1em;
     color: white;
 }
 
 .side-element:hover{
-    background-color: #6b6767
+    background-color: #424141a3
 }
 
 /* footer */
