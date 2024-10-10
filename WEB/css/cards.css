@@ -9,6 +9,7 @@
 }
 
 .card{
+    color: #000000;
     margin: 2em 2em;
     padding: 0 1em 0 3em;
     border: 3px, black, dashed;
@@ -17,6 +18,11 @@
     flex-direction: row;
     transition: transform 0.3s;
     animation: card-gradient 2s infinite alternate, card-glow 1s infinite alternate;
+}
+
+.no-animation {
+    background-color: rgb(110, 134, 149);
+    animation: none;
 }
 
 @media screen and (max-width: 700px) {
@@ -62,10 +68,14 @@
 }
 
 .card:hover{
-    background-color: rgb(238, 232, 149);
     box-shadow: 10px 10px 10px rgb(175, 170, 99);
     transform: scale(1.05);
     animation: card-gradient 2s infinite alternate;
+}
+.no-animation:hover {
+    animation: none;
+    background-color: #7896a8;
+    box-shadow: 10px 10px 10px rgb(99, 142, 175);
 }
 
 .card-title{
@@ -122,6 +132,11 @@
     padding: 20px;
     border: 2px solid #000000;
     width: 80%;
+}
+
+.modal-content-dark{
+    background-color: #484c4a;
+    color: white;
 }
 
 #modal-description{
