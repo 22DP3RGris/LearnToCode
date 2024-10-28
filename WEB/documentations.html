@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/WEB/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5a4865fbe1.js" crossorigin="anonymous"></script>
+    <title>LTCode | Documentations</title>
+    <link rel="icon" type="image/x-icon" href="./images/game_controller.png">
+</head>
+<body>
+    <header>
+        <h1 href="/WEB/index.html" class="page-title">Documentations <i class="fa-solid fa-book"></i></h1>
+        <nav class="navbar">
+            <i class="fa-solid fa-moon moon-ico"></i>
+            <div class="toggle-switch">
+                <label class="switch">
+                    <input type="checkbox" id="toggle-switch">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <script src="/WEB/js/toggle_switch.js"></script>
+            <ul>
+                <li><a href="/WEB/index.html" class="nav-element">Home</a></li>
+                <li><a href="/WEB/cards.html" class="nav-element">Cards</a></li>
+                <li><a href="/WEB/contact.html" class="nav-element">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn nav-element">Resources</a>
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-element">Tutorials</a>
+                    <a href="#" class="dropdown-element">E-books</a>
+                </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <button href="javascript:void(0);" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+            <div class="dropdown-content">
+                <a href="/WEB/index.html" class="hamburger-element">Home</a>
+                <a href="/WEB/cards.html" class="hamburger-element">Cards</a>
+                <a href="/WEB/contact.html" class="hamburger-element">Contact</a>
+                <div class="hamburger-dropdown">
+                    <a href="javascript:void(0);" class="hamburger-element">Resources</a>
+                    <div class="hamburger-dropdown-content">
+                        <a href="#" class="hamburger-element">Tutorials</a>
+                        <a href="#" class="hamburger-element">E-books</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/WEB/js/hamburger.js"></script>
+    </header>
+    <main>
+        <h2 class="title-1">Some useful documentations</h2>
+        <div class="box-1 box-split">
+            <div class="box-info">
+                <h3>Python:</h3>
+                <p class="doc-link">W3schools: <a href="https://www.w3schools.com/python/">https://www.w3schools.com/python/</a></p>
+                <p class="doc-link">Python3 doc: <a href="https://docs.python.org/3/">https://docs.python.org/3/</a></p>
+                <p class="doc-link">Devdocs: <a href="https://devdocs.io/python~3.12/">https://devdocs.io/python~3.12/</a></p>
+            </div>
+            <img src="/WEB/images/Python.png" alt="Python">
+        </div>
+        <div class="box-1 box-split">
+            <div class="box-info">
+                <h3>Java:</h3>
+                <p class="doc-link">W3schools: <a href="https://www.w3schools.com/java/">https://www.w3schools.com/java/</a></p>
+                <p class="doc-link">Oracle: <a href="https://docs.oracle.com/en/java/">https://docs.oracle.com/en/java/</a></p>
+                <p class="doc-link">Dev.java: <a href="https://dev.java/learn/">https://dev.java/learn/</a></p>
+            </div>
+            <img src="/WEB/images/Java.png" alt="Java">
+        </div>
+        <div class="box-1 box-split">
+            <div class="box-info">
+                <h3>C#:</h3>
+                <p class="doc-link">W3schools: <a href="https://www.w3schools.com/cs/index.php">https://www.w3schools.com/cs/index.php</a></p>
+                <p class="doc-link">Microsoft dotnet: <a href="https://learn.microsoft.com/en-us/dotnet/csharp/">https://learn.microsoft.com/en-us/dotnet/csharp/</a></p>
+            </div>
+            <img src="/WEB/images/CSharp.png" alt="C#">
+        </div>
+        <div class="box-1 box-split">
+            <div class="box-info">
+                <h3>PHP:</h3>
+                <p class="doc-link">W3schools: <a href="https://www.w3schools.com/php/">https://www.w3schools.com/php/</a></p>
+                <p class="doc-link">PHP doc: <a href="https://www.php.net/docs.php">https://www.php.net/docs.php</a></p>
+                <p class="doc-link">Devdocs: <a href="https://devdocs.io/php/">https://devdocs.io/php/</a></p>
+            </div>
+            <img src="/WEB/images/PHP.png" alt="PHP">
+        </div>
+    </main>
+    <footer> &copy; Copyright 2024 LearnToCode </footer>
+</body>
+</html>
